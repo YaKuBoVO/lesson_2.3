@@ -1,14 +1,12 @@
-*{
+* {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   /*overflow-x: hidden;*/
    font-family: sans-serif;
 }
 
 body{
-   background-color: #ccc;
-   /*overflow: hidden;*/
+   background-color: rgb(165, 161, 161);
 }
 
 /* START ONE-ANIMATION */
@@ -18,6 +16,7 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
    right: 850px;
+   bottom: 0px;
 }
 .box  .card {
    position: relative;
@@ -95,7 +94,8 @@ body{
 .box2{
    position: absolute;
    left: 135px;
-   top: 30px;
+   top: 100px;
+   overflow: hidden;
 }
 .box2 .content {
    position: relative;
@@ -164,3 +164,32 @@ body{
    margin-left: 40px;
 }
 /* THE END TWO-ANIMATION */
+
+
+
+/* START THREE-ANIMATION */
+.box3 .relative {
+   position: relative;
+   width: 100%;
+   height: 70px;
+   top: 30px;
+   border: 1px solid #333;
+   overflow: hidden;
+   /*background-color: #fff;*/
+   transition: 1s;
+}
+.box3 .relative .absolute{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: -100%;
+   transition: 1s;
+}
+.box3 .relative:hover .absolute{
+   left: 0;
+}
+.absolute h1{
+   text-align: center;
+   color: #333;
+   margin-top: 10px;
+}
