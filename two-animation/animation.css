@@ -1,0 +1,44 @@
+/* START THREE-ANIMATION */
+body{
+   margin: 0;
+   overflow: hidden;
+   background-color: rgb(165, 161, 161);
+   box-sizing: border-box;
+}
+
+.box3{
+   margin-top: 250px;
+   border: 1px solid rgb(158, 172, 158);
+   background-color: rgba(216, 216, 216, 0.959);
+}
+
+.animation{
+   z-index: 2;
+   height: 60px;
+   margin-top: 15px;
+   margin-left: -10px;
+   position: relative;
+   background-color: rgb(216, 216, 216);
+   transition-duration: 5s;
+   transition-property: margin-left;
+}
+
+.cursor  {
+   width: 1px;
+   height: 60px;
+   margin-left: 0px;
+   background-color: #000;
+}
+
+.text-h1{
+   z-index: 0;
+   margin-top: -70px;
+   text-align: center;
+   position: relative;
+}
+
+.box3:hover .animation{
+   margin-left: 180%;
+   transition-duration: 5s;
+   transition-property: margin-left;
+}
